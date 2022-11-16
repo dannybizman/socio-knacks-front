@@ -6,7 +6,7 @@ const NavBar = () => {
 <div >
 {/* Navigation */}
 
-<nav className="navbar navbar-expand-md navbar-dark fixed-top navbar-light">
+<nav id="navbarExample" className="navbar navbar-expand-md navbar-dark fixed-top navbar-light" aria-label="Main navigation">
   <div className="container-fluid">
   <NavLink className="navbar-brand logo-image" to="/"><img src="../asset/images/sklogo.png" alt="alternative" /></NavLink> 
     <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
