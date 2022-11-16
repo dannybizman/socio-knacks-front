@@ -15,7 +15,7 @@ const Home = () => {
         <div className="col-lg-6">
           <div className="text-container">
             <h1 className="h1-large">The #1 CRM app <span className="replace-me">in Africa</span></h1>
-            <p className="p-large">all business, young startups</p>
+            <p className="p-large">CRM tool for all business, young startups</p>
             <NavLink className="btn-solid-lg" to="/register">Sign up for free</NavLink>
           </div> {/* end of text-container */}
         </div> {/* end of col */}
