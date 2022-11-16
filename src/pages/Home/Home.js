@@ -14,14 +14,14 @@ const Home = () => {
       <div className="row">
         <div className="col-lg-6">
           <div className="text-container">
-            <h1 className="h1-large">The #1 CRM app for <span className="replace-me">small business, young startups, bootstrappers</span></h1>
-            <p className="p-large">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut dignissim, neque ut vanic barem ultrices sollicitudin</p>
+            <h1 className="h1-large">The #1 CRM app <span className="replace-me">in Africa</span></h1>
+            <p className="p-large">all business, young startups</p>
             <NavLink className="btn-solid-lg" to="/register">Sign up for free</NavLink>
           </div> {/* end of text-container */}
         </div> {/* end of col */}
         <div className="col-lg-6">
           <div className="image-container">
-            <img className="img-fluid" src="../asset/images/header-illustration.svg" alt="alternative" />
+            <img className="img-fluid" src="../asset/images/sk-n.svg" alt="alternative" />
           </div> {/* end of image-container */}
         </div> {/* end of col */}
       </div> {/* end of row */}
