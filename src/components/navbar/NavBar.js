@@ -6,28 +6,45 @@ const NavBar = () => {
 <div >
 {/* Navigation */}
 
-<nav className="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+<nav className="navbar navbar-expand-md navbar-dark fixed-top navbar-light">
   <div className="container-fluid">
-    <a className="navbar-brand" href="#">Fixed navbar</a>
+  <NavLink className="navbar-brand logo-image" to="/"><img src="../asset/images/sklogo.png" alt="alternative" /></NavLink> 
     <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
       <span className="navbar-toggler-icon" />
     </button>
     <div className="collapse navbar-collapse" id="navbarCollapse">
       <ul className="navbar-nav me-auto mb-2 mb-md-0">
         <li className="nav-item">
-          <a className="nav-link active" aria-current="page" href="#">Home</a>
+          <a className="nav-link active" aria-current="page" href="#header">Home</a>
         </li>
         <li className="nav-item">
-          <a className="nav-link" href="#">Link</a>
+          <a className="nav-link" href="#features">Features</a>
         </li>
         <li className="nav-item">
-          <a className="nav-link disabled" href="#" tabIndex={-1} aria-disabled="true">Disabled</a>
+        <a className="nav-link" href="#details">Details</a>
+        </li>
+        <li className="nav-item">
+          <a className="nav-link" href="#pricing">Pricing</a>
+        </li>
+        <li className="nav-item dropdown">
+          <a className="nav-link dropdown-toggle" href="#" id="dropdown01" data-bs-toggle="dropdown" aria-expanded="false">More</a>
+          <ul className="dropdown-menu" aria-labelledby="dropdown01">
+            <li><NavLink className="dropdown-item bg-transparent text-dark" href="article.html">About Us</NavLink></li>
+            <li><div className="dropdown-divider" /></li>
+            <li><NavLink className="dropdown-item bg-transparent text-dark" href="terms.html">Articles</NavLink></li>
+            <li><div className="dropdown-divider" /></li>
+            <li><NavLink className="dropdown-item bg-transparent text-dark" href="privacy.html">Knowledge Base</NavLink></li>
+            <li><div className="dropdown-divider" /></li>
+            <li><NavLink className="dropdown-item bg-transparent text-dark" href="privacy.html">Privacy Policy</NavLink></li>
+          </ul>
         </li>
       </ul>
-      <form className="d-flex">
-        <input className="form-control me-2" type="search" placeholder="Search" aria-label="Search" />
-        <button className="btn btn-outline-success" type="submit">Search</button>
-      </form>
+      {/* <div className="d-flex">
+        <NavLink className="btn btn-outline-success me-2" type="submit">Login</NavLink>
+      </div> */}
+       <span className="nav-item d-flex">
+        <NavLink className="btn-outline-sm" to="/login">Log in</NavLink>
+      </span>
     </div>
   </div>
 </nav>
