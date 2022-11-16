@@ -21,7 +21,7 @@ const Home = () => {
         </div> {/* end of col */}
         <div className="col-lg-6">
           <div className="image-container">
-            <img className="img-fluid" src="../asset/images/sk-n.svg" alt="alternative" />
+            <img className="img-fluid" src="../asset/images/sk-1-re.png" alt="alternative" />
           </div> {/* end of image-container */}
         </div> {/* end of col */}
       </div> {/* end of row */}
