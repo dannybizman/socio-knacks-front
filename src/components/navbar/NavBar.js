@@ -5,12 +5,38 @@ const NavBar = () => {
   return (
 <div >
 {/* Navigation */}
-<nav id="navbarExample" className="navbar navbar-expand-lg fixed-top navbar-light" aria-label="Main navigation">
+
+<nav className="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+  <div className="container-fluid">
+    <a className="navbar-brand" href="#">Fixed navbar</a>
+    <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+      <span className="navbar-toggler-icon" />
+    </button>
+    <div className="collapse navbar-collapse" id="navbarCollapse">
+      <ul className="navbar-nav me-auto mb-2 mb-md-0">
+        <li className="nav-item">
+          <a className="nav-link active" aria-current="page" href="#">Home</a>
+        </li>
+        <li className="nav-item">
+          <a className="nav-link" href="#">Link</a>
+        </li>
+        <li className="nav-item">
+          <a className="nav-link disabled" href="#" tabIndex={-1} aria-disabled="true">Disabled</a>
+        </li>
+      </ul>
+      <form className="d-flex">
+        <input className="form-control me-2" type="search" placeholder="Search" aria-label="Search" />
+        <button className="btn btn-outline-success" type="submit">Search</button>
+      </form>
+    </div>
+  </div>
+</nav>
+
+{/* <nav id="navbarExample" className="navbar navbar-expand-lg fixed-top navbar-light" aria-label="Main navigation">
   <div className="container">
-    {/* Image Logo */}
+
     <NavLink className="navbar-brand logo-image" to="/"><img src="../asset/images/sklogo.png" alt="alternative" /></NavLink> 
-    {/* Text Logo - Use this if you don't have a graphic logo */}
-    {/* <a class="navbar-brand logo-text" href="index.html">Ioniq</a> */}
+   
     <button className="navbar-toggler p-0 border-0" type="button" id="navbarSideCollapse" aria-label="Toggle navigation">
       <span className="navbar-toggler-icon" />
     </button>
@@ -44,9 +70,11 @@ const NavBar = () => {
       <span className="nav-item">
         <NavLink className="btn-outline-sm" to="/login">Log in</NavLink>
       </span>
-    </div> {/* end of navbar-collapse */}
-  </div> {/* end of container */}
-</nav> {/* end of navbar */}
+    </div> 
+  </div>
+   
+</nav>  */}
+{/* end of navbar */}
 {/* end of navigation */}
 
 </div>
