@@ -6,10 +6,10 @@ const NavBar = () => {
 <div >
 {/* Navigation */}
 
-<nav id="navbarExample" className="navbar navbar-expand-md navbar-dark fixed-top navbar-dark" aria-label="Main navigation">
+<nav id="navbarExample" className="navbar navbar-expand-md navbar-dark fixed-top navbar-light" aria-label="Main navigation">
   <div className="container-fluid">
   <NavLink className="navbar-brand logo-image" to="/"><img src="../asset/images/sklogo.png" alt="alternative" /></NavLink> 
-    <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+    <button className="navbar-toggler navbar-dark" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
       <span className="navbar-toggler-icon" />
     </button>
     <div className="collapse navbar-collapse" id="navbarCollapse">
