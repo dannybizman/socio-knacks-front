@@ -10,7 +10,7 @@ function Cards() {
       </div>
       <div className="cards">
       <div className="header-card">
- <h1 className="">CRM super software tool</h1>
+ <h1 className="">CRM super software tool for all</h1>
  </div>
         <div className="cards__container">
       
